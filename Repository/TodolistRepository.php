@@ -1,8 +1,10 @@
 <?php
 
+
 namespace Repository {
 
     use Entity\Todolist;
+
 
     interface TodolistRepository
     {
@@ -17,7 +19,7 @@ namespace Repository {
 
     class TodolistRepositoryImpl implements TodolistRepository {
 
-        public array $todolist = array();
+        private array $todolist = array();
 
         function save(Todolist $todolist): void
         {
